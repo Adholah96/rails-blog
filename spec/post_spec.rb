@@ -44,4 +44,19 @@ RSpec.describe Post, type: :model do
     expect(recent_posts[1].title).to eq('post3')
     expect(recent_posts[2].title).to eq('post2')
   end
+  it 'five recent comments' do
+    user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.',
+                       posts_counter: 0)
+    post = Post.create(author: user, title: 'post1', text: 'This is my first post', likes_counter: 0,
+                       comments_counter: 0)
+    Comment.create(author: user, post:, text: 'This is my first comment')
+    Comment.create(author: user, post:, text: 'This is my second comment')
+    Comment.create(author: user, post:, text: 'This is my third comment')
+    Comment.create(author: user, post:, text: 'This is my fourth comment')
+    Comment.create(author: user, post:, text: 'This is my fifth comment')
+
+    expect(post.recent_comments.size).to eq(5)
+    expect(post.recent_comments[0].text).to eq('This is my fifth comment')
+    expect(post.recent_comments[1].text).to eq('This is my fourth comment')
+  end
 end
