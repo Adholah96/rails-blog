@@ -54,7 +54,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 5.0.0'
   gem 'shoulda-matchers', '~> 4.0'
-  
 end
 
 group :development do
@@ -73,8 +72,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'factory_bot_rails'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
-
