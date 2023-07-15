@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.describe Like, type: :model do
   it 'increments likes_counter' do
     user = User.new(
