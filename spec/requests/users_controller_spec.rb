@@ -32,7 +32,6 @@ RSpec.describe '/users', type: :request do
       it 'Render correct templete for show action' do
         expect(response).to render_template(:show)
       end
-
     end
   end
 end
