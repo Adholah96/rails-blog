@@ -1,2 +1,18 @@
-<h1>Here is a selected post</h1>
+<div class="post_detail_card_header"">
+<div class="parent">
+ <p class ="post_title_card"> Post # <%=@post.id%> by <span class="post_author_name"><%=@post.author.name%></span></p>
+<p><%= @post.text %></p>
+</div>
+ <p class="post_counters">Comments: <%=@post.comments_counter%> Likes: <%=@post.likes_counter%></p>
 
+</div>
+
+<div class="my_comments">
+<% if @comments.empty? %>
+ <p>No Comments</p>
+<% else %>
+ <% @comments.each do |comment| %>
+   <p><%= comment.author.name %>: <%= comment.text %></p>
+ <% end %>
+<% end %>
+</div>

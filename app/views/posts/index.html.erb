@@ -1,2 +1,13 @@
-<h1>Here is a list of all posts/h1>
+<%= render 'shared/user', user:@user%>
+<% @posts.each do |post| %>
+  <%= render 'shared/post', post:post %>
+
+    <% if post.recent_comments.empty? %>
+      <p>No comments</p>
+    <% else %>
+    <% post.recent_comments.each do |comment| %>
+      <%= render 'shared/comment', comment:comment %>
+<% end %>
+    <% end %>
+<% end %>
 

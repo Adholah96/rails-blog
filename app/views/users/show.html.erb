@@ -1,2 +1,18 @@
-<h1>Here is a selected User</h1>
+<%= render 'shared/user', user:@user%>
 
+<% if @user.user_recent_posts.empty? %>
+  <h2>No Posts</h2>
+  <p>Kindly submit a post</p>
+<% else %>
+      <div class="user_bio">
+        <h3>Bio</h3>
+        <p><%= @user.bio %><p>
+      </div>
+         <% @user.user_recent_posts.each do |post| %>
+
+      <%= render 'shared/post', post:post %>
+   <%end%>
+<div class="see_all_posts">
+  <%= link_to 'See all posts', user_posts_path(user_id: @user.id) %>
+</div>
+<% end %>
