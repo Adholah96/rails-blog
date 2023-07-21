@@ -13,3 +13,96 @@
  *= require_tree .
  *= require_self
  */
+
+ .user-card {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+  }
+  
+  .user_bio {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .post_card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .post_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post_content p {
+    margin-right: 0; /* Remove default margin to align to the right */
+  }
+  
+  .see_all_posts {
+    text-align: center; /* Center the link within the div */
+    margin-top: 1rem; /* Add top margin for spacing */
+  }
+  
+  .see_all_posts a {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .see_all_posts a:hover {
+    background-color: #0056b3;
+  }
+  
+  .post_detail_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    gap: 5rem;
+  }
+  
+  .post_title_card {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .post_author_name {
+    color: #333;
+  }
+  
+  .post_counters {
+    margin-left: auto;
+  }
+  
+  .my_comments {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
