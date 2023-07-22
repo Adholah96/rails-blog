@@ -1,13 +1,26 @@
-<%= render 'shared/user', user:@user%>
+<div class = 'post'>
+<h2> All Posts</h2>
+<div class = 'post_container'>
+<div class = 'user_row'>
+    <div class = 'user_image'>
+    </div>
+<div class = 'user_block'>
+<h3><%= @user.name %></h3>
+<p>Number of Posts = <%=@user.posts_counter %></p>
+</div>
+</div>
 <% @posts.each do |post| %>
-  <%= render 'shared/post', post:post %>
-
-    <% if post.recent_comments.empty? %>
-      <p>No comments</p>
-    <% else %>
-    <% post.recent_comments.each do |comment| %>
-      <%= render 'shared/comment', comment:comment %>
+<div class = 'user_posts'>
+<h3> <%= link_to post.title, post_path(post) %></h3>
+<p> <%= post.text %><p>
+<p class = 'counters'> Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
+</div>
+<div class = 'post_comments'>
+ <% post.recent_comments.each do |comment|%>
+<p><%= comment.author.name%>: <%= comment.text %></p>
 <% end %>
-    <% end %>
+</div>
 <% end %>
 
+</div>
+</div>
