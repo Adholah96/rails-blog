@@ -11,7 +11,7 @@ h2 {
 a:link,
 a:active,
 a:visited {
-  color: #ff1414;
+  color: #c06e6e;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -91,12 +91,10 @@ p,
 .button {
   justify-content: center;
   border: 1px solid blue;
+  border-radius: 10px;
   margin: 20px 30%;
 }
 
-.button:hover {
-  background-color: aqua;
-}
 
 .counters {
   justify-content: right;
