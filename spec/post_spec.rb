@@ -18,8 +18,6 @@ RSpec.describe Post, type: :model do
     let(:user) { User.create!(name: 'John', posts_counter: 0) }
     let!(:post1) { user.posts.create!(title: 'Post 1', likes_counter: 0, comments_counter: 0) }
     let!(:post2) { user.posts.create!(title: 'Post 2', likes_counter: 0, comments_counter: 0) }
-
-   
   end
   it 'five recent comments' do
     user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.',
