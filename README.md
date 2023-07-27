@@ -110,6 +110,12 @@ To test the web app run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/nerdy_me_)
 - Linkedin [@linkedinprofile](https://www.linkedin.com/in/heldricks-arthur/)
 
+👤 **Ouail Laarabi**
+ 
+ - GitHub: [@Ouail-01](https://github.com/Ouail-01?tab=overview&from=2023-01-01&to=2023-01-02)
+ - Twitter: [@Ouail_Laarabi](https://twitter.com/Ouail_Laarabi)
+ - LinkedIn: [Ouail Laarabi](https://www.linkedin.com/in/ouail-laarabi-53203b250/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
